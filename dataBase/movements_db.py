@@ -7,8 +7,8 @@ class ReservaInDB (BaseModel):
     id_reserva: int = 0
     username: str
     fecha_reserva: str = datetime.now().strftime('%Y-%m-%d')
-    destino: str
-    hotel: str
+    # destino: str
+    # hotel: str
     tipo_habitacion: str
     valor: int
     fecha_in: str
@@ -21,8 +21,8 @@ database_reservas = {
     1:  ReservaInDB(**{"id_reserva":"1",
                        "username":"roger23",
                        "fecha_reserva":"2020-10-30",
-                       "destino":"Cartagena",
-                       "hotel":"Puerta del Sol",
+                    #    "destino":"Cartagena",
+                    #    "hotel":"Puerta del Sol",
                        "tipo_habitacion":"Doble",
                        "valor":300000,
                        "fecha_in":"15-dic-2020",
@@ -32,8 +32,8 @@ database_reservas = {
     2:  ReservaInDB(**{"id_reserva":"2",
                        "username":"karen45",
                        "fecha_reserva":"2020-7-30",
-                       "destino":"Medellin",
-                       "hotel":"Ave María",
+                    #    "destino":"Medellin",
+                    #    "hotel":"Ave María",
                        "tipo_habitacion":"Queen",
                        "valor":800000,
                        "fecha_in":"05-ene-2021",
@@ -43,8 +43,8 @@ database_reservas = {
     3:  ReservaInDB(**{"id_reserva":"3",
                        "username":"juan88",
                        "fecha_reserva":"2020-1-24",
-                       "destino":"Santa Marta",
-                       "hotel":"Pescadito",
+                    #    "destino":"Santa Marta",
+                    #    "hotel":"Pescadito",
                        "tipo_habitacion":"King",
                        "valor":650000,
                        "fecha_in":"03-mar-2021",

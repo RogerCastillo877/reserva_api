@@ -6,8 +6,8 @@ class ReservaOut(BaseModel):
     id_reserva: int
     nombre: str
     fecha_reserva: str
-    destino: str
-    hotel: str
+    # destino: str
+    # hotel: str
     tipo_habitacion: str
     valor: int
     fecha_in: str
@@ -16,8 +16,8 @@ class ReservaOut(BaseModel):
 
 class ReservaIn(BaseModel):
     username: str
-    destino: str
-    hotel: str
+    # destino: str
+    # hotel: str
     tipo_habitacion: str
     valor: int
     fecha_in: str
