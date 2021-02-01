@@ -1,4 +1,4 @@
-from dataBase.user_db import get_user
+from dataBase.user_db import get_user, UserInDB, save_user, get_keys
 
 from dataBase.movements_db import ReservaInDB
 from dataBase.movements_db import get_reserva, save_reserva, update_reserva
@@ -7,7 +7,7 @@ from models.user_models import UserIn
 from models.user_models import UserInRegistro, UserOutRegistro
 from models.movements_models import ReservaOut, ReservaIn, ReservaCancelIn, ReservaCancelOut
 
-# Se importan algunos paquetes adicionales y se crea la api
+Se importan algunos paquetes adicionales y se crea la api
 from fastapi import FastAPI
 from fastapi import HTTPException
 
@@ -19,7 +19,7 @@ origins = ["http://localhost.tiangolo.com",
             "http://localhost",
             "http://localhost:8080",
             "http://localhost:8081",
-            "https://reserva-app-tosko.herokuapp.com/"
+            "https://reserva-app-tosko.herokuapp.com"
             ]
 
 api.add_middleware(CORSMiddleware,
