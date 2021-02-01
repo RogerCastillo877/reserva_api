@@ -13,9 +13,9 @@ class ReservaInDB (BaseModel):
     valor: int
     fecha_in: str
     fecha_out: str
-    estado: str = "activa"
+    estado: str = "ACTIVA"
 
-# Se definen de la base de datos ficticia No1
+# Se definen de la base  de datos ficticia No1
 database_reservas : Dict[int, ReservaInDB]
 database_reservas = {
     1:  ReservaInDB(**{"id_reserva":"1",
