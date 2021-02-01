@@ -7,7 +7,7 @@ from models.user_models import UserIn
 from models.user_models import UserInRegistro, UserOutRegistro
 from models.movements_models import ReservaOut, ReservaIn, ReservaCancelIn, ReservaCancelOut
 
-Se importan algunos paquetes adicionales y se crea la api
+# Se importan algunos paquetes adicionales y se crea la api
 from fastapi import FastAPI
 from fastapi import HTTPException
 
